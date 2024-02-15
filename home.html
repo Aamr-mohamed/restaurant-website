@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gourmet Burger</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar"
+      style="
+        position: fixed;
+        font-weight: bolder;
+        font-family: cursive;
+        /* font-size: 20px; */
+        background-color: transparent;
+        z-index: 2;
+        color: white;
+        display: flex;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+      "
+    >
+      <div
+        style="display: flex; justify-content: flex-start; margin-left: 40px"
+      >
+        <a href="/home.html" style="text-decoration: none; color: white">
+          <p>Gourmet Burger</p>
+        </a>
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: flex-end;
+          gap: 40px;
+          margin-right: 40px;
+        "
+      >
+        <a href="" style="text-decoration: none; color: white">
+          <p>About</p>
+        </a>
+        <a href="" style="text-decoration: none; color: white">
+          <p>Order</p>
+        </a>
+        <a href="" style="text-decoration: none; color: white">
+          <p>Menu</p>
+        </a>
+        <a href="" style="text-decoration: none; color: white">
+          <p>Registeration</p>
+        </a>
+        <a href="" style="text-decoration: none; color: white">
+          <p>Login</p>
+        </a>
+      </div>
+    </nav>
+
+    <!-- carousel -->
+    <div aria-label="Newest Photos">
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">
+          <i class="fa-solid fa-circle-arrow-left"></i>
+        </button>
+        <button class="carousel-button next" data-carousel-button="next">
+          <i class="fa-solid fa-circle-arrow-right"></i>
+        </button>
+
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img src="./assets/images/baconBurger.jpg" alt="baconBurger" />
+          </li>
+          <li class="slide">
+            <img src="./assets/images/burger-1.jpg" alt="" />
+          </li>
+          <li class="slide">
+            <img src="./assets/images/cheeseCarmelBuger.jpg" alt="" />
+          </li>
+          <li class="slide">
+            <img src="./assets/images/drippingBurger.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--phrases  -->
+    <div
+      aria-label="Camptivating phrases"
+      style="
+        color: white;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 120px;
+        padding-bottom: 120px;
+      "
+      class="section1"
+    >
+      <p
+        style="
+          font-size: xx-large;
+          font-weight: bolder;
+          font-family: cursive;
+          margin-bottom: 30px;
+        "
+      >
+        Gourmet burger
+      </p>
+      <p style="font-size: 30px">
+        Our fresh, local ingredients and unique charbroiled cooking style give
+        our burgers the
+      </p>
+      <p style="font-size: 30px">
+        “backyard grill” taste that is unmatched anywhere else.
+      </p>
+    </div>
+
+    <!-- order online section -->
+    <div style="background-color: black; display: flex; flex-direction: row">
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-left: 10%;
+        "
+      >
+        <h2 style="color: white; margin-bottom: 40px; font-size: 50px">
+          ORDER ONLINE
+        </h2>
+        <button
+          style="
+            background-color: red;
+            width: 180px;
+            height: 60px;
+            font-size: large;
+            cursor: pointer;
+          "
+          onclick="location.href='#'"
+        >
+          PickUp
+        </button>
+      </div>
+      <img
+        src="./assets/images/niggaBurger.jpg"
+        alt=""
+        style="width: 30%; display: flex; align-items: center; margin-left: 30%"
+      />
+    </div>
+
+    <!-- picture section -->
+    <div style="height: 400px">
+      <img
+        src="./assets/images/section2Background.jpg"
+        style="
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        "
+        alt=""
+      />
+    </div>
+
+    <!-- footer -->
+    <footer
+      style="
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin: 0;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          padding-left: 100px;
+          padding-right: 100px;
+        "
+      >
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: contact@gourmetburger.com</p>
+          <p>Phone: (+02) 0123 456 7891</p>
+          <p>Address: 123 Burger Lane,Egypt</p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <a
+            href="https://www.facebook.com"
+            style="color: white; margin: 0 10px"
+            >Facebook</a
+          >
+          <a href="https://www.twitter.com" style="color: white; margin: 0 10px"
+            >Twitter</a
+          >
+          <a
+            href="https://www.instagram.com"
+            style="color: white; margin: 0 10px"
+            >Instagram</a
+          >
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2024 Gourmet Burger. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

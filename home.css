@@ -1,0 +1,16 @@
+@import url("./assets/css/carousel.css");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.section1 {
+  background-image: url("./assets/images/section1Background.jpg");
+}

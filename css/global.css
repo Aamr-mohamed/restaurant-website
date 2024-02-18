@@ -15,3 +15,9 @@ body {
 .section1 {
   background-image: url("./assets/images/section1Background.jpg");
 }
+
+.star:hover,
+:active {
+  color: orange !important;
+  cursor: pointer;
+}

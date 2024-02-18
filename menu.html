@@ -3,7 +3,239 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
     <title>Menu</title>
   </head>
-  <body></body>
+  <body>
+    <nav
+      class="navbar"
+      style="
+        position: fixed;
+        font-weight: bolder;
+        font-family: cursive;
+        /* font-size: 20px; */
+        background-color: transparent;
+        z-index: 2;
+        color: white;
+        display: flex;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+      "
+    >
+      <div
+        style="display: flex; justify-content: flex-start; margin-left: 40px"
+      >
+        <a
+          href="/home.html"
+          style="
+            text-decoration: none;
+            color: white;
+            font-family: poppins;
+            color: red;
+            font-size: 25px;
+          "
+        >
+          <p>Gourmet Burger</p>
+        </a>
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: flex-end;
+          gap: 40px;
+          margin-right: 40px;
+        "
+      >
+        <a
+          class="navLinks"
+          href="./about.html"
+          style="text-decoration: none; color: white; font-family: poppins"
+        >
+          <p>About</p>
+        </a>
+        <a
+          class="navLinks"
+          href="./order.html"
+          style="text-decoration: none; color: white; font-family: poppins"
+        >
+          <p>Order</p>
+        </a>
+        <a
+          class="navLinks"
+          href="./menu.html"
+          style="text-decoration: none; color: white; font-family: poppins"
+        >
+          <p>Menu</p>
+        </a>
+        <a
+          class="navLinks"
+          href="./registeration.html"
+          style="text-decoration: none; color: white; font-family: poppins"
+        >
+          <p>Registeration</p>
+        </a>
+        <a
+          class="navLinks"
+          href="./login.html"
+          style="text-decoration: none; color: white; font-family: poppins"
+        >
+          <p>Login</p>
+        </a>
+      </div>
+    </nav>
+
+    <div class="position-relative">
+      <div style="box-shadow: inset 0px 0px 30px 50px rgba(0, 0, 0, 0.6)">
+        <img
+          src="./assets/images/menuHero.avif"
+          class="w-100"
+          style="
+            filter: brightness(50%);
+            z-index: -2;
+            height: 100vh;
+            object-fit: cover;
+            object-position: top;
+          "
+          alt=""
+        />
+      </div>
+      <p
+        class="h1 position-absolute bottom-50 start-50 translate-middle-x text-white"
+        style="font-size: 90px"
+      >
+        Menu
+      </p>
+    </div>
+
+    <div
+      class="d-flex justify-content-center align-content-center"
+      style="background-image: url(./assets/images/section1Background.jpg)"
+    >
+      <div class="bg-black px-lg-5" style="width: 80%">
+        <p class="h3 text-white text-center">GOURMET BURGERS</p>
+        <p class="h5 text-white text-center">
+          Our signature burgers are 1/3 lb all-beef patties charbroiled to
+          perfection. Served on a sesame seed bun. "The Works" is lettuce,
+          tomato, onion, pickle and our signature Best Burger Sauce.
+        </p>
+
+        <!--first item  -->
+        <div class="d-flex flex-row gap-3 pt-4" style="width: 100%">
+          <div
+            class="d-flex justify-content-center align-content-center flex-column"
+            style="width: 90%"
+          >
+            <img
+              src="./assets/images/cheeseCarmelBuger.jpg"
+              class="w-100"
+              alt=""
+            />
+            <p class="text-white h4 fw-bold">BEST BURGER</p>
+            <p class="text-white">
+              A succulent burger topped with rich, gooey caramelized onions,
+              creating a sweet and savory flavor explosion.<br />
+              Jr. $6.99 <br />
+              Single $9.99<br />
+              Double $11.49
+            </p>
+          </div>
+
+          <!-- second item -->
+          <div
+            class="d-flex justify-content-center align-content-center flex-column"
+            style="width: 90%"
+          >
+            <img src="./assets/images/burger-1.jpg" class="w-100" alt="" />
+            <p class="text-white h4 fw-bold">Dripping cheese Burger</p>
+            <p class="text-white">
+              A juicy burger smothered in melted cheese that deliciously drips
+              over the edges, blending perfectly with every bite.<br />
+              Jr. $8.99 <br />
+              Single $11.99<br />
+              Double $14.49
+            </p>
+          </div>
+
+          <!-- third item -->
+          <div
+            class="d-flex justify-content-center align-content-center flex-column"
+            style="width: 90%"
+          >
+            <img src="./assets/images/baconBurger.jpg" class="w-100" alt="" />
+            <p class="text-white h4 fw-bold">Bacon Burger</p>
+            <p class="text-white">
+              Thick cut bacon adds just the right amount of flavor.<br />
+              Jr. $7.99 <br />
+              Single $10.99<br />
+              Double $13.49
+            </p>
+          </div>
+        </div>
+
+        <!-- fourth item -->
+        <div class="d-flex flex-row gap-3 pt-4" style="width: 100%">
+          <div
+            class="d-flex justify-content-center align-content-center flex-column"
+            style="width: 90%"
+          >
+            <img src="./assets/images/triple.jpg" class="w-100" alt="" />
+            <p class="text-white h4 fw-bold">Triple the trouble Burger</p>
+            <p class="text-white">
+              A towering delight with triple beef patties, cheddar, bacon, and
+              spicy sauce in a toasted brioche bun..<br />
+              Jr. $30.99 <br />
+              Single $44.99<br />
+              Double $57.49
+            </p>
+          </div>
+
+          <!-- fifth item -->
+          <div
+            class="d-flex justify-content-center align-content-center flex-column"
+            style="width: 90%"
+          >
+            <img
+              src="./assets/images/drippingBurger.jpg"
+              class="w-100"
+              style="height: 45%; object-fit: cover"
+              alt=""
+            />
+            <p class="text-white h4 fw-bold">Chicken Burger</p>
+            <p class="text-white">
+              grilled chicken breast topped with fresh lettuce, tomato, and a
+              creamy aioli on a soft brioche bun.<br />
+              Jr. $20.99 <br />
+              Single $25.99<br />
+              Double $27.49
+            </p>
+          </div>
+
+          <!-- sixth item -->
+          <div
+            class="d-flex justify-content-center align-content-center flex-column"
+            style="width: 90%"
+          >
+            <img src="./assets/images/vegan.jpg" class="w-100" alt="" />
+            <p class="text-white h4 fw-bold">Vegan Burger</p>
+            <p class="text-white">
+              yikes who eats that.<br />
+              Jr. $free <br />
+              Single $free<br />
+              Double $free
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

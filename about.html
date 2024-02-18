@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>About</title>
   </head>
   <body>
@@ -27,7 +38,16 @@
       <div
         style="display: flex; justify-content: flex-start; margin-left: 40px"
       >
-        <a href="/home.html" style="text-decoration: none; color: white">
+        <a
+          href="/home.html"
+          style="
+            text-decoration: none;
+            color: white;
+            font-family: poppins;
+            color: red;
+            font-size: 25px;
+          "
+        >
           <p>Gourmet Burger</p>
         </a>
       </div>
@@ -39,25 +59,158 @@
           margin-right: 40px;
         "
       >
-        <a href="./about.html" style="text-decoration: none; color: white">
+        <a
+          class="navLinks"
+          href="./about.html"
+          style="text-decoration: none; color: white; font-family: poppins"
+        >
           <p>About</p>
         </a>
-        <a href="./order.html" style="text-decoration: none; color: white">
+        <a
+          class="navLinks"
+          href="./order.html"
+          style="text-decoration: none; color: white; font-family: poppins"
+        >
           <p>Order</p>
         </a>
-        <a href="./menu.html" style="text-decoration: none; color: white">
+        <a
+          class="navLinks"
+          href="./menu.html"
+          style="text-decoration: none; color: white; font-family: poppins"
+        >
           <p>Menu</p>
         </a>
         <a
+          class="navLinks"
           href="./registeration.html"
-          style="text-decoration: none; color: white"
+          style="text-decoration: none; color: white; font-family: poppins"
         >
           <p>Registeration</p>
         </a>
-        <a href="./login.html" style="text-decoration: none; color: white">
+        <a
+          class="navLinks"
+          href="./login.html"
+          style="text-decoration: none; color: white; font-family: poppins"
+        >
           <p>Login</p>
         </a>
       </div>
     </nav>
+
+    <div style="position: relative">
+      <div style="box-shadow: inset 0px 0px 30px 50px rgba(0, 0, 0, 0.6)">
+        <img
+          src="./assets/images/aboutHeroImage.avif"
+          alt=""
+          style="
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            object-position: center;
+            filter: brightness(50%);
+            z-index: -2;
+            position: relative;
+          "
+        />
+      </div>
+      <h1
+        style="
+          position: absolute;
+          top: 40%;
+          right: 40%;
+          color: white;
+          font-size: 80px;
+          font-family: cursive;
+        "
+      >
+        About Us
+      </h1>
+    </div>
+
+    <div
+      class="w-100 d-flex justify-content-center align-items-center bg-black"
+    >
+      <div class="w-50">
+        <p class="h6 text-white text-center pt-xxl-5">
+          At Gourmet Burger, we aim to transform the burger experience. We see
+          each burger not just as a meal, but as a journey that delights and
+          fulfills. Committed to using the finest local ingredients and
+          sustainable practices, we craft each burger with care and precision.
+          Our goal is to create memorable moments, one burger at a time.
+        </p>
+
+        <p class="h6 text-white text-center pt-5">
+          Since 2024, Best Burger has been proudly serving the Best Burgers in
+          town using fresh, local ingredients. Our unique charbroiled flavor is
+          unmatched anywhere.
+        </p>
+
+        <p class="h6 text-white text-center pt-5">
+          We constantly strive to exceed our guests expectations in service,
+          consistency, and overall experience. Thanks for choosing us!
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-black d-flex justify-content-center py-5">
+      <img
+        src="./assets/images/aboutImage2.jpg"
+        style="height: 30%; width: 20%; margin-right: 50px"
+        alt=""
+      />
+      <img
+        src="./assets/images/aboutImage1.jpg"
+        style="height: 45%; width: 20%"
+        alt=""
+      />
+    </div>
+
+    <footer
+      style="
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin: 0;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          padding-left: 100px;
+          padding-right: 100px;
+        "
+      >
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: contact@gourmetburger.com</p>
+          <p>Phone: (+02) 0123 456 7891</p>
+          <p>Address: 123 Burger Lane,Egypt</p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <a
+            href="https://www.facebook.com"
+            style="color: white; margin: 0 10px"
+            >Facebook</a
+          >
+          <a href="https://www.twitter.com" style="color: white; margin: 0 10px"
+            >Twitter</a
+          >
+          <a
+            href="https://www.instagram.com"
+            style="color: white; margin: 0 10px"
+            >Instagram</a
+          >
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2024 Gourmet Burger. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

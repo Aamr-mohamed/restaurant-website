@@ -132,6 +132,143 @@
       </p>
     </div>
 
+    <div
+      class="container-fluid"
+      style="
+        background-image: url(./assets/images/burger_bg.png);
+        padding: 80px;
+      "
+    >
+      <form class="w-100 d-flex flex-row">
+        <div class="w-50">
+          <h2 class="form-heading">Burger Order Form</h2>
+          <div class="form-group mb-3" id="burgerForm">
+            <label for="burgerSelect">Choose your burger</label>
+            <select class="form-control" id="burgerSelect">
+              <option value="classic">Beefy Burger</option>
+              <option value="cheese">Dripping cheese Burger</option>
+              <option value="bacon">Bacon Burger</option>
+              <option value="trouble">Trouble Burger</option>
+              <option value="chicken">Chicken Burger</option>
+              <option value="vegan">Vegan Burger</option>
+              <option value="rocket">Rocket Burger</option>
+              <option value="smokin">Smokin Burger</option>
+            </select>
+          </div>
+          <div class="form-group mb-3">
+            <label for="quantity">Quantity</label>
+            <input
+              type="number"
+              class="form-control"
+              id="quantity"
+              value="1"
+              min="1"
+            />
+          </div>
+
+          <button type="button" class="btn btn-warning mb-3" id="addBurgerBtn">
+            Add Another Burger
+          </button>
+
+          <script>
+            document
+              .getElementById("addBurgerBtn")
+              .addEventListener("click", function () {
+                var newBurgerSelect = document.createElement("div");
+                newBurgerSelect.innerHTML = `
+          <div class="form-group">
+            <label>Choose your burger</label>
+            <select class="form-control">
+                <option>Classic Burger</option>
+                <option>Cheese Burger</option>
+                <option>Bacon Burger</option>
+                <option>Veggie Burger</option>
+            </select>
+          </div>
+            <div class="form-group">
+              <label>Quantity</label>
+              <input type="number" class="form-control" value="1" min="1">
+            </div>
+            `;
+                document
+                  .getElementById("burgerForm")
+                  .appendChild(newBurgerSelect);
+              });
+          </script>
+
+          <div class="form-group mb-3">
+            <label>Add-ons</label><br />
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="extraCheese"
+                value="extraCheese"
+              />
+              <label class="form-check-label" for="extraCheese"
+                >Extra Cheese</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="extraBacon"
+                value="extraBacon"
+              />
+              <label class="form-check-label" for="extraBacon"
+                >Extra Bacon</label
+              >
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="specialInstructions">Special instructions</label>
+            <textarea
+              class="form-control"
+              id="specialInstructions"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="w-50 px-5">
+          <h3 class="">Delivery details</h3>
+          <div class="form-group py-2">
+            <label for="customerName">Full Name</label>
+            <input
+              type="text"
+              class="form-control mb-3"
+              id="customerName"
+              placeholder="Enter your Fullname"
+            />
+
+            <label for="customerNumber">Phone number</label>
+            <input
+              type="tel"
+              class="form-control mb-3"
+              placeholder="+02 01** *** ****"
+            />
+
+            <label for="address">Address</label>
+            <input
+              type="text"
+              class="form-control mb-3"
+              placeholder="Enter your address"
+            />
+
+            <input type="radio" class="form-check-input" />
+            <label for="payment">Credit or Debit card</label>
+
+            <input type="checkbox" class="form-check-input mb-3" />
+            <label for="payment">Paypal</label>
+          </div>
+          <button type="submit" class="btn btn-warning float-end">
+            Submit Order
+          </button>
+        </div>
+      </form>
+    </div>
+
     <footer class="footer" style="padding-bottom: 30px">
       <div style="background-image: url(./assets/images/burger_bg.png)">
         <div class="container">

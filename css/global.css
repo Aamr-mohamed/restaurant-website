@@ -8,16 +8,24 @@
   padding: 0;
 }
 
-body {
-  margin: 0;
+body,
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
 }
 
 .section1 {
   background-image: url("./assets/images/section1Background.jpg");
 }
 
-.star:hover,
-:active {
-  color: orange !important;
-  cursor: pointer;
+h1,
+h2,
+h3,
+h4 {
+  font-family: montserrat;
+}
+
+p {
+  font-family: raleway;
 }

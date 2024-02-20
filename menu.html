@@ -4,6 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -33,16 +48,10 @@
         style="display: flex; justify-content: flex-start; margin-left: 40px"
       >
         <a
-          href="/home.html"
-          style="
-            text-decoration: none;
-            color: white;
-            font-family: poppins;
-            color: red;
-            font-size: 25px;
-          "
+          href="home.html"
+          style="text-decoration: none; color: red; font-size: 25px"
         >
-          <p>Gourmet Burger</p>
+          <p style="font-family: pacifico">Gourmet Burger</p>
         </a>
       </div>
       <div
@@ -54,39 +63,45 @@
         "
       >
         <a
+          href="about.html"
+          style="text-decoration: none; color: white"
           class="navLinks"
-          href="./about.html"
-          style="text-decoration: none; color: white; font-family: poppins"
         >
-          <p>About</p>
+          <p style="font-family: cursive">About</p>
         </a>
         <a
+          href="order.html"
+          style="text-decoration: none; color: white"
           class="navLinks"
-          href="./order.html"
-          style="text-decoration: none; color: white; font-family: poppins"
         >
-          <p>Order</p>
+          <p style="font-family: cursive">Order</p> </a
+        ><a
+          href="contact.html"
+          style="text-decoration: none; color: white"
+          class="navLinks"
+        >
+          <p style="font-family: cursive">Contact Us</p>
         </a>
         <a
+          href="menu.html"
+          style="text-decoration: none; color: white"
           class="navLinks"
-          href="./menu.html"
-          style="text-decoration: none; color: white; font-family: poppins"
         >
-          <p>Menu</p>
+          <p style="font-family: cursive">Menu</p>
         </a>
         <a
+          href="registeration.html"
+          style="text-decoration: none; color: white"
           class="navLinks"
-          href="./registeration.html"
-          style="text-decoration: none; color: white; font-family: poppins"
         >
-          <p>Registeration</p>
+          <p style="font-family: cursive">Registeration</p>
         </a>
         <a
+          href="login.html"
+          style="text-decoration: none; color: white"
           class="navLinks"
-          href="./login.html"
-          style="text-decoration: none; color: white; font-family: poppins"
         >
-          <p>Login</p>
+          <p style="font-family: cursive">Login</p>
         </a>
       </div>
     </nav>
@@ -108,132 +123,440 @@
       </div>
       <p
         class="h1 position-absolute bottom-50 start-50 translate-middle-x text-white"
-        style="font-size: 90px"
+        style="font-size: 90px; font-family: pacifico"
       >
         Menu
       </p>
     </div>
 
     <div
-      class="d-flex justify-content-center align-content-center"
-      style="background-image: url(./assets/images/section1Background.jpg)"
+      class="container-fluid"
+      style="
+        background-image: url(./assets/images/burger_bg.png);
+        padding-top: 150px;
+        padding-left: 150px;
+        padding-right: 150px;
+      "
     >
-      <div class="bg-black px-lg-5" style="width: 80%">
-        <p class="h3 text-white text-center">GOURMET BURGERS</p>
-        <p class="h5 text-white text-center">
-          Our signature burgers are 1/3 lb all-beef patties charbroiled to
-          perfection. Served on a sesame seed bun. "The Works" is lettuce,
-          tomato, onion, pickle and our signature Best Burger Sauce.
-        </p>
-
-        <!--first item  -->
-        <div class="d-flex flex-row gap-3 pt-4" style="width: 100%">
-          <div
-            class="d-flex justify-content-center align-content-center flex-column"
-            style="width: 90%"
-          >
-            <img
-              src="./assets/images/cheeseCarmelBuger.jpg"
-              class="w-100"
-              alt=""
-            />
-            <p class="text-white h4 fw-bold">BEST BURGER</p>
-            <p class="text-white">
-              A succulent burger topped with rich, gooey caramelized onions,
-              creating a sweet and savory flavor explosion.<br />
-              Jr. $6.99 <br />
-              Single $9.99<br />
-              Double $11.49
+      <div class="row" style="padding-bottom: 30px">
+        <div class="col-lg-12">
+          <div class="section_title text-center mb-80">
+            <p
+              class="h3 text-center"
+              style="font-family: pacifico; color: #f2c64d; margin-bottom: 20px"
+            >
+              GOURMET BURGERS
             </p>
+            <h3
+              class="h5 text-black text-center"
+              style="
+                font-family: montserrat;
+                font-size: 38px;
+                line-height: 42px;
+                font-weight: 700;
+                text-transform: uppercase;
+              "
+            >
+              BEST EVER BURGERS
+            </h3>
           </div>
+        </div>
+      </div>
 
-          <!-- second item -->
-          <div
-            class="d-flex justify-content-center align-content-center flex-column"
-            style="width: 90%"
-          >
-            <img src="./assets/images/burger-1.jpg" class="w-100" alt="" />
-            <p class="text-white h4 fw-bold">Dripping cheese Burger</p>
-            <p class="text-white">
-              A juicy burger smothered in melted cheese that deliciously drips
-              over the edges, blending perfectly with every bite.<br />
-              Jr. $8.99 <br />
-              Single $11.99<br />
-              Double $14.49
-            </p>
-          </div>
-
-          <!-- third item -->
-          <div
-            class="d-flex justify-content-center align-content-center flex-column"
-            style="width: 90%"
-          >
-            <img src="./assets/images/baconBurger.jpg" class="w-100" alt="" />
-            <p class="text-white h4 fw-bold">Bacon Burger</p>
-            <p class="text-white">
-              Thick cut bacon adds just the right amount of flavor.<br />
-              Jr. $7.99 <br />
-              Single $10.99<br />
-              Double $13.49
-            </p>
+      <!--first item  -->
+      <div class="row" style="margin: 15px">
+        <div class="col-xl-6 col-md-6 col-lg-6">
+          <div class="d-flex align-items-center" style="margin-bottom: 35px">
+            <div class="thumb">
+              <img src="./assets/images/burger/1.png" alt="" />
+            </div>
+            <div class="info" style="padding-left: 20px">
+              <p class="text-black h4 fw-bold">Beefy Burger</p>
+              <p
+                style="
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 28px;
+                  color: #6e6e6e;
+                  font-family: montserrat, sans-serif;
+                "
+              >
+                A succulent burger topped with rich, gooey caramelized onions,
+                creating a sweet and savory flavor explosion.
+              </p>
+              <p
+                style="
+                  font-weight: 700;
+                  font-weight: 700;
+                  font-size: 24px;
+                  color: #f0542c;
+                "
+              >
+                $9.99
+              </p>
+            </div>
           </div>
         </div>
 
-        <!-- fourth item -->
-        <div class="d-flex flex-row gap-3 pt-4" style="width: 100%">
-          <div
-            class="d-flex justify-content-center align-content-center flex-column"
-            style="width: 90%"
-          >
-            <img src="./assets/images/triple.jpg" class="w-100" alt="" />
-            <p class="text-white h4 fw-bold">Triple the trouble Burger</p>
-            <p class="text-white">
-              A towering delight with triple beef patties, cheddar, bacon, and
-              spicy sauce in a toasted brioche bun..<br />
-              Jr. $30.99 <br />
-              Single $44.99<br />
-              Double $57.49
-            </p>
-          </div>
+        <div class="col-md-6 col-lg-6">
+          <div class="d-flex align-items-center" style="margin-bottom: 35px">
+            <div class="thumb">
+              <img src="./assets/images/burger/2.png" alt="" />
+            </div>
 
-          <!-- fifth item -->
-          <div
-            class="d-flex justify-content-center align-content-center flex-column"
-            style="width: 90%"
-          >
-            <img
-              src="./assets/images/drippingBurger.jpg"
-              class="w-100"
-              style="height: 45%; object-fit: cover"
-              alt=""
-            />
-            <p class="text-white h4 fw-bold">Chicken Burger</p>
-            <p class="text-white">
-              grilled chicken breast topped with fresh lettuce, tomato, and a
-              creamy aioli on a soft brioche bun.<br />
-              Jr. $20.99 <br />
-              Single $25.99<br />
-              Double $27.49
-            </p>
+            <div class="info" style="padding-left: 20px">
+              <p class="text-black h4 fw-bold">Dripping cheese Burger</p>
+              <p
+                style="
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 28px;
+                  color: #6e6e6e;
+                  font-family: montserrat, sans-serif;
+                "
+              >
+                A juicy burger smothered in melted cheese that deliciously drips
+                over the edges
+              </p>
+              <p
+                style="
+                  font-weight: 700;
+                  font-weight: 700;
+                  font-size: 24px;
+                  color: #f0542c;
+                "
+              >
+                $9.99
+              </p>
+            </div>
           </div>
+        </div>
 
-          <!-- sixth item -->
-          <div
-            class="d-flex justify-content-center align-content-center flex-column"
-            style="width: 90%"
-          >
-            <img src="./assets/images/vegan.jpg" class="w-100" alt="" />
-            <p class="text-white h4 fw-bold">Vegan Burger</p>
-            <p class="text-white">
-              yikes who eats that.<br />
-              Jr. $free <br />
-              Single $free<br />
-              Double $free
-            </p>
+        <div class="col-lg-6 col-md-6">
+          <div class="d-flex align-items-center" style="margin-bottom: 35px">
+            <div class="thumb">
+              <img src="./assets/images/burger/3.png" alt="" />
+            </div>
+            <div class="info" style="padding-left: 20px">
+              <p class="text-black h4 fw-bold">Bacon Burger</p>
+              <p
+                style="
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 28px;
+                  color: #6e6e6e;
+                  font-family: montserrat, sans-serif;
+                "
+              >
+                Thick cut bacon adds just the right amount of flavor.
+              </p>
+              <p
+                style="
+                  font-weight: 700;
+                  font-weight: 700;
+                  font-size: 24px;
+                  color: #f0542c;
+                "
+              >
+                $9.99
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-md-6 col-lg-6">
+          <div class="d-flex align-items-center" style="margin-bottom: 35px">
+            <div class="thumb">
+              <img src="./assets/images/burger/4.png" alt="" />
+            </div>
+            <div class="info" style="padding-left: 20px">
+              <p class="text-black h4 fw-bold">Trouble Burger</p>
+              <p
+                style="
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 28px;
+                  color: #6e6e6e;
+                  font-family: montserrat, sans-serif;
+                "
+              >
+                grilled chicken breast topped with fresh lettuce, tomato, and a
+                creamy aioli on a soft brioche bun.
+              </p>
+              <p
+                style="
+                  font-weight: 700;
+                  font-weight: 700;
+                  font-size: 24px;
+                  color: #f0542c;
+                "
+              >
+                $9.99
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-md-6 col-lg-6">
+          <div class="d-flex align-items-center" style="margin-bottom: 35px">
+            <div class="thumb">
+              <img src="./assets/images/burger/5.png" alt="" />
+            </div>
+            <div class="info" style="padding-left: 20px">
+              <p class="text-black h4 fw-bold">Chicken Burger</p>
+              <p
+                style="
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 28px;
+                  color: #6e6e6e;
+                  font-family: montserrat, sans-serif;
+                "
+              >
+                grilled chicken breast topped with fresh lettuce, tomato, and a
+                creamy aioli on a soft brioche bun.
+              </p>
+              <p
+                style="
+                  font-weight: 700;
+                  font-weight: 700;
+                  font-size: 24px;
+                  color: #f0542c;
+                "
+              >
+                $9.99
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-md-6 col-lg-6">
+          <div class="d-flex align-items-center" style="margin-bottom: 35px">
+            <div class="thumb">
+              <img src="./assets/images/burger/6.png" alt="" />
+            </div>
+            <div class="info" style="padding-left: 20px">
+              <p class="text-black h4 fw-bold">Vegan Burger</p>
+              <p
+                style="
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 28px;
+                  color: #6e6e6e;
+                  font-family: montserrat, sans-serif;
+                "
+              >
+                Yikes who eats that.
+              </p>
+              <p
+                style="
+                  font-weight: 700;
+                  font-weight: 700;
+                  font-size: 24px;
+                  color: #f0542c;
+                "
+              >
+                $9.99
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-md-6 col-lg-6">
+          <div class="d-flex align-items-center" style="margin-bottom: 35px">
+            <div class="thumb">
+              <img src="./assets/images/burger/7.png" alt="" />
+            </div>
+            <div class="info" style="padding-left: 20px">
+              <p class="text-black h4 fw-bold">Rocket Burger</p>
+              <p
+                style="
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 28px;
+                  color: #6e6e6e;
+                  font-family: montserrat, sans-serif;
+                "
+              >
+                A juicy, flame-grilled beef patty topped with melted cheese,
+                fresh lettuce, and tomato, nestled between a soft, toasted bun.
+              </p>
+              <p
+                style="
+                  font-weight: 700;
+                  font-weight: 700;
+                  font-size: 24px;
+                  color: #f0542c;
+                "
+              >
+                $9.99
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-md-6 col-lg-6">
+          <div class="d-flex align-items-center" style="margin-bottom: 35px">
+            <div class="thumb">
+              <img src="./assets/images/burger/8.png" alt="" />
+            </div>
+            <div class="info" style="padding-left: 20px">
+              <p class="text-black h4 fw-bold">Smokin Burger</p>
+              <p
+                style="
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 28px;
+                  color: #6e6e6e;
+                  font-family: montserrat, sans-serif;
+                "
+              >
+                A savory blend of crispy bacon, smoky barbecue sauce, and golden
+                onion rings atop a tender beef patty, encased in a lightly
+                toasted brioche bun.
+              </p>
+              <p
+                style="
+                  font-weight: 700;
+                  font-weight: 700;
+                  font-size: 24px;
+                  color: #f0542c;
+                "
+              >
+                $9.99
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <footer class="footer" style="padding-bottom: 30px">
+      <div style="background-image: url(./assets/images/burger_bg.png)">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-md-6 col-lg-4">
+              <div class="text-center">
+                <h3
+                  style="
+                    font-weight: 700;
+                    font-size: 24px;
+                    text-transform: capitalize;
+                    color: #1a0d01;
+                  "
+                >
+                  maadi
+                </h3>
+                <p>
+                  5th burgar city,Egypt<br />
+                  <a
+                    href="#"
+                    style="
+                      color: #f0542c;
+                      font-weight: 500;
+                      font-size: 20px;
+                      line-height: 28px;
+                      font-family: montserrat;
+                      text-decoration: none;
+                      background-color: transparent;
+                    "
+                    >info@burger.com</a
+                  >
+                </p>
+                <a
+                  href="#"
+                  style="
+                    color: #f0542c;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-family: montserrat;
+                    text-decoration: none;
+                    background-color: transparent;
+                  "
+                  >+02 012 345 6789</a
+                >
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-4">
+              <div class="text-center">
+                <h3
+                  style="
+                    font-family: montserrat;
+                    color: #1a0d01;
+                    font-size: 24px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                  "
+                >
+                  Alexandria
+                </h3>
+                <p>
+                  5th street of burger <br />
+                  <a
+                    href="#"
+                    style="
+                      color: #f0542c;
+                      font-weight: 500;
+                      font-size: 20px;
+                      line-height: 28px;
+                      font-family: montserrat;
+                      text-decoration: none;
+                      background-color: transparent;
+                    "
+                    >info@burger.com</a
+                  >
+                </p>
+                <a
+                  href="#"
+                  style="
+                    color: #f0542c;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-family: montserrat;
+                    text-decoration: none;
+                    background-color: transparent;
+                  "
+                  >+02 0113 342 1234</a
+                >
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-12 col-lg-4">
+              <div>
+                <h3
+                  style="
+                    font-family: montserrat;
+                    color: #1a0d01;
+                    font-size: 24px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                  "
+                >
+                  Stay Connected
+                </h3>
+                <form action="#">
+                  <input
+                    class="form-control"
+                    style="margin-bottom: 20px"
+                    type="text"
+                    placeholder="Enter your mail"
+                  />
+                  <button
+                    style="margin-bottom: 20px"
+                    class="btn btn-warning"
+                    type="submit"
+                  >
+                    Sign Up
+                  </button>
+                </form>
+                <p>Stay connect with us to get exclusive offer!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
